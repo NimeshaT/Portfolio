@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="Assests/css/bootstrap.min.css">
+    <script src="Assests/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="Assests/css/app.css">
+    <link rel="stylesheet" href="Assests/css/all.min.css">
+</head>
+<body>
+<header id="header" class="fixed-top">
+
+    <nav class="navbar navbar-expand-sm ">
+        <!-- Brand/logo -->
+        <a class="navbar-brand" href="#">
+            <img src="Assests/img/cafe.png" alt="logo" style="width:46px;margin-left: 24px">
+<!--            <i class="fa fa-university fa-10x" aria-hidden="true" style="margin-left: 24px"></i>-->
+        </a>
+
+        <!-- Links -->
+        <ul class="navbar-nav">
+            <ul>
+                <li><a  href="Home.html">Home</a></li>
+                <li><a class="active" href="Customer.html">Customer</a></li>
+                <li><a href="Item.html">Item</a></li>
+                <li><a href="Order.html">Order</a></li>
+
+
+            </ul>
+        </ul>
+    </nav>
+
+</header>
+
+<!--body-->
+<section class="container-fluid mt-3" id="custSec" style="padding-top: 42px">
+    <section class="row">
+        <div class="col-md-4">
+            <h1>Customer Manage</h1>
+            <form>
+                <div>
+                    <label class="form-label" for="id">Customer ID</label>
+                    <input class="form-control" id="id" name="id" type="text">
+                </div>
+                <div>
+                    <label class="form-label" for="name">Customer Name</label>
+                    <input class="form-control" id="name" name="name" type="text">
+                </div>
+                <div>
+                    <label class="form-label" for="address">Customer Address</label>
+                    <input class="form-control" id="address" name="address" type="text">
+                </div>
+                <div>
+                    <label class="form-label" for="salary">Customer Salary</label>
+                    <input class="form-control" id="salary" name="salary" type="text">
+                </div>
+                <div class="btn-group mt-4">
+                    <button class="btn btn-primary" id="btnSaveCustomer" type="button">Save</button>
+                    <button class="btn btn-warning" id="btnUpdateCustomer" type="button">Update</button>
+                    <button class="btn btn-success" id="btnDeleteCustomer" type="button">Delete</button>
+                    <button class="btn btn-info" id="btnGetAllCustomer" type="button">Get All</button>
+                    <button class="btn btn-danger" type="button">Clear</button>
+                </div>
+            </form>
+        </div>
+        <div class="col-md-8">
+            <table class="table table-bordered table-hover ">
+                <thead class=" text-white" style="background: linear-gradient(to top left, #33ccff 0%, #ff99cc 100%);">
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Salary</th>
+                </tr>
+                </thead>
+                <tbody id="tbody">
+
+                </tbody>
+            </table>
+        </div>
+    </section>
+</section>
+
+
+<!--body-->
+
+
+<!--footer-->
+<footer id="footer">
+    <div class="container">
+
+        <div class="credits">
+            Designed by <span><b>GROCA@ groca.com</b></span>
+        </div>
+    </div>
+</footer>
+<!--footer end-->
+</body>
+</html>

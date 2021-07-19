@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Index Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="Assests/css/bootstrap.min.css">
+    <script src="Assests/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="Assests/css/app.css">
+    <link rel="stylesheet" href="Assests/css/all.min.css">
+
+    <style>
+        ul > li {
+            cursor: pointer;
+            text-decoration: underline;
+        }
+        li:hover{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+<!--//////////////////////////////////////////////////header-start/////////////////////////////////////////////////-->
+<header id="header" class="fixed-top">
+
+    <nav class="navbar navbar-expand-sm ">
+
+            <img src="Assests/img/cafe.png" alt="logo" style="width:46px;margin-left: 24px" id="headerimg">
+            <!--            <i class="fa fa-university fa-45x" aria-hidden="true" style="margin-left: 24px;padding: 5px"></i>-->
+
+
+        <!-- Links -->
+        <h1 class="position-absolute" id="nav"></h1>
+
+            <ul>
+                <li id="Homeload">Home</li>
+                <li id="Customerload">Customer</li>
+                <li id="Itemload">Item</li>
+                <li id="Orderload">Order</li>
+
+            </ul>
+
+    </nav>
+
+</header>
+<!--//////////////////////////////////////////////////header-end/////////////////////////////////////////////////-->
+<!--//////////////////////////////////////////////////Home-start/////////////////////////////////////////////////-->
+<main id="home">
+    <section id="hero" class="d-flex align-items-center" >
+        <div class="container d-flex flex-column align-items-center" data-aos="zoom-in" data-aos-delay="100">
+            <img src="Assests/img/bg4.png" id="image">
+            <h1>GROCA</h1>
+            <h2>GROCERY SHOPPING <span style="font-size: 20px">in affordable price</span></h2>
+            <a href="#custSec" class="btn-about" id="morebtn">More..</a>
+        </div>
+    </section>
+</main>
+
+<!--//////////////////////////////////////////////////Home-end/////////////////////////////////////////////////-->
+<!--//////////////////////////////////////////////////Customer-start/////////////////////////////////////////////////-->
+<main id="custSec" style="padding-top: 82px;padding-bottom: 89px">
+    <section class="container-fluid mt-3"  >
+        <section class="row">
+            <div class="col-md-4">
+                <h1>Customer Manage</h1>
+                <form>
+                    <div>
+                        <label class="form-label" for="id">Customer ID</label>
+                        <input class="form-control" id="id" name="id" type="text">
+                    </div>
+                    <div>
+                        <label class="form-label" for="name">Customer Name</label>
+                        <input class="form-control" id="name" name="name" type="text">
+                    </div>
+                    <div>
+                        <label class="form-label" for="address">Customer Address</label>
+                        <input class="form-control" id="address" name="address" type="text">
+                    </div>
+                    <div>
+                        <label class="form-label" for="salary">Customer Salary</label>
+                        <input class="form-control" id="salary" name="salary" type="text">
+                    </div>
+                    <div class="btn-group mt-4">
+                        <button class="btn btn-primary" id="btnSaveCustomer" type="button">Save</button>
+                        <button class="btn btn-warning" id="btnUpdateCustomer" type="button">Update</button>
+                        <button class="btn btn-success" id="btnDeleteCustomer" type="button">Delete</button>
+                        <button class="btn btn-info" id="btnGetAllCustomer" type="button">Get All</button>
+                        <button class="btn btn-danger" type="button">Clear</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-8">
+                <table class="table table-bordered table-hover ">
+                    <thead class=" text-white" style="background: linear-gradient(to top left, #33ccff 0%, #ff99cc 100%);">
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Address</th>
+                        <th>Salary</th>
+                    </tr>
+                    </thead>
+                    <tbody id="tbody">
+
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </section>
+</main>
+
+<!--//////////////////////////////////////////////////Customer-end/////////////////////////////////////////////////-->
+<!--//////////////////////////////////////////////////Item-start/////////////////////////////////////////////////-->
+<main id="itemSec" style="padding-top: 82px;padding-bottom: 92px">
+    <section class="container-fluid mt-3"  >
+        <section class="row">
+            <div class="col-md-4">
+                <h1>Item Manage</h1>
+                <form>
+                    <div>
+                        <label class="form-label" for="iid">Item Code</label>
+                        <input class="form-control" id="iid" name="iid" type="text">
+                    </div>
+                    <div>
+                        <label class="form-label" for="iname">Item Name</label>
+                        <input class="form-control" id="iname" name="iname" type="text">
+                    </div>
+                    <div>
+                        <label class="form-label" for="qty">Item Qty</label>
+                        <input class="form-control" id="qty" name="qty" type="text">
+                    </div>
+                    <div>
+                        <label class="form-label" for="price">Item Price</label>
+                        <input class="form-control" id="price" name="price" type="text">
+                    </div>
+                    <div class="btn-group mt-4">
+                        <button class="btn btn-primary" id="btnSaveItem" type="button">Save</button>
+                        <button class="btn btn-warning" id="btnUpdateItem" type="button">Update</button>
+                        <button class="btn btn-success" id="btnDeleteItem" type="button">Delete</button>
+                        <button class="btn btn-info" id="btnGetAllItem" type="button">Get All</button>
+                        <button class="btn btn-danger" type="button">Clear</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-8">
+                <table class="table table-bordered table-hover">
+                    <thead class=" text-white" style="background: linear-gradient(to top left, #33ccff 0%, #ff99cc 100%);">
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Qty</th>
+                        <th>Price</th>
+                    </tr>
+                    </thead>
+                    <tbody >
+
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </section>
+</main>
+
+<!--//////////////////////////////////////////////////Item-end/////////////////////////////////////////////////-->
+<!--//////////////////////////////////////////////////Order-start/////////////////////////////////////////////////-->
+<main id="orderSec" style="padding-top: 82px;padding-bottom: 92px">
+    <section class="container-fluid mt-3"  >
+        <section class="row">
+            <div class="col-md-4">
+                <h1>Order Details</h1>
+                <form>
+                    <div>
+                        <label class="form-label" for="oid">Order ID</label>
+                        <input class="form-control" id="oid" name="oid" type="text">
+                    </div>
+                    <div>
+                        <label class="form-label" for="date">Order Date</label>
+                        <input class="form-control" id="date" name="date" type="text">
+                    </div>
+                    <div>
+                        <label class="form-label" for="oname">Customer Name</label>
+                        <input class="form-control" id="oname" name="oname" type="text">
+                    </div>
+                    <div>
+                        <label class="form-label" for="cusId">Customer ID</label>
+                        <input class="form-control" id="cusId" name="cusId" type="text">
+                    </div>
+                    <div>
+                        <label class="form-label" for="state">State</label>
+                        <input class="form-control" id="state" name="state" type="text">
+                    </div>
+                    <div>
+                        <label class="form-label" for="oaddress">Address</label>
+                        <input class="form-control" id="oaddress" name="oaddress" type="text">
+                    </div>
+                    <div class="btn-group mt-3">
+                        <button class="btn btn-primary" id="btnSaveOrder" type="button">Save</button>
+                        <button class="btn btn-warning" id="btnUpdateOrder" type="button">Update</button>
+                        <button class="btn btn-success" id="btnDeleteOrder" type="button">Delete</button>
+                        <button class="btn btn-info" id="btnGetAllOrder" type="button">Get All</button>
+                        <button class="btn btn-danger" type="button">Clear</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-8">
+                <table class="table table-bordered table-hover">
+                    <thead class=" text-white" style="background: linear-gradient(to top left, #33ccff 0%, #ff99cc 100%);">
+                    <tr>
+                        <th>Order ID</th>
+                        <th>Order Date</th>
+                        <th>Customer Name</th>
+                        <th>Customer ID</th>
+                        <th>State</th>
+                        <th>Address</th>
+                    </tr>
+                    </thead>
+                    <tbody >
+
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </section>
+</main>
+
+<!--//////////////////////////////////////////////////Order-end/////////////////////////////////////////////////-->
+<script src="Assests/js/jquery-3.6.0.min.js"></script>
+<script src="Assests/js/app.js"></script>
+
+</body>
+</html>

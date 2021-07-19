@@ -1,0 +1,124 @@
+#footer {
+    background: #e9e8e6;
+    padding: 30px 0;
+    color: #222222;
+    font-size: 14px;
+    text-align: center;
+    height: 39px;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+#image{
+    width: 836px;
+    /* background-position: right; */
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+#hero{
+    width: 100%;
+    height: 100vh;
+    /*background-image: url("../images/bg2.jpg");*/
+    background: linear-gradient(to bottom right, #33ccff 0%, #ff99cc 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: none;
+}
+#hero h1 {
+    margin: 0;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 31px;
+    color: #1a2d45;
+    font-family: 'Pacifico', cursive;
+    margin-bottom: 15px;
+    margin-right: 890px;
+
+}
+#hero .btn-about {
+    font-family: "Raleway", sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 12px 40px;
+    border-radius: 50px;
+    margin-top: 18px;
+    color: #fff;
+    background: #00778b;
+    margin-right: 915px;
+}
+#hero h2{
+    margin-right: 578px;
+    margin-top: 4px;
+}
+.navbar{
+    background: linear-gradient(to top left, #33ccff 0%, #ff99cc 100%);
+}
+/*a, a:hover, a:focus, a:active {*/
+/*    text-decoration: none;*/
+/*    color: inherit;*/
+/*}*/
+/*.active{*/
+/*    color: white;*/
+/*    text-decoration: underline;*/
+/*}*/
+
+
+/*navigation*/
+.navbar {
+    padding: 0;
+}
+
+.navbar ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.navbar li {
+    position: relative;
+    padding: 10px 0 10px 28px;
+}
+
+.navbar a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Raleway", sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+    color: black;
+}
+
+/**/
+
+.navbar > ul > li > a:before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    left: 0;
+    background-color: #34b7a7;
+
+}
+
+/**/
+
+.navbar a:hover, .navbar .active, .navbar li:hover > a {
+    color: white;
+}
+
+.navbar .dropdown ul {
+    display: block;
+    position: absolute;
+    left: 14px;
+    margin: 0;
+    padding: 10px 0;
+    background: #fff;
+}
+
